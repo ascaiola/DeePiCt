@@ -68,28 +68,29 @@ The necessary virtual environment for the installation needs only snakemake and 
 conda install -n base -c conda-forge mamba
 conda activate base
 mamba create -c conda-forge -c bioconda -n snakemake snakemake==5.13.0 python=3.7
-conda activate snakemake
-conda install pandas
+mamba activate snakemake
+mamba install pandas
 ```
 
 
 Install Pytorch:
 
 ```bash
-conda install -c pytorch pytorch-gpu torchvision
+#mamba install -c pytorch pytorch-gpu torchvision
+mamba install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 ```
 
 Install Keras:
 
 ```
-conda install -c conda-forge keras-gpu=2.3.1
+mamba install -c anaconda keras-gpu=2.3.1
 ```
 
 ### Clone this repository
 
 ```bash
 cd /folder/where/the/repository/will/be/cloned
-git clone https://github.com/ZauggGroup/DeePiCt.git
+git clone https://github.com/ascaiola/DeePiCt.git
 ```
 
 ## 3. How to run<a name="How_to_run"></a>
