@@ -5,7 +5,7 @@ channels:
   - conda-forge
   - default
 dependencies:
-  - python=3.7
+  - python=3.8
   - jupyter
   - imageio
   - pytorch
