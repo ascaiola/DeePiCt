@@ -73,16 +73,16 @@ conda install pandas
 ```
 
 
-Install Pytorch:
+Install Pytorch (for 2d?):
 
 ```bash
-conda install -c pytorch pytorch-gpu torchvision
+conda install -c pytorch pytorch-cuda torchvision
 ```
 
-Install Keras:
+Install Keras (for 3d?):
 
 ```
-conda install -c conda-forge keras-gpu=2.3.1
+conda install -c anaconda keras-gpu=2.3.1
 ```
 
 ### Clone this repository
